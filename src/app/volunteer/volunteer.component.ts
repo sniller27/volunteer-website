@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+import {NgForm} from '@angular/forms';
+
+//httpclient module for making requests
+import { DataService } from '../data.service';
+
 @Component({
   selector: 'app-volunteer',
   templateUrl: './volunteer.component.html',
@@ -7,9 +12,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VolunteerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+  }
+
+  onSubmit(userForm: NgForm) {
+    // console.log(userForm.value);
+    // console.log('Name:' + userForm.controls['firstname'].value);
+    // console.log('Name:' + userForm.controls['lastname'].value);
+    // console.log('Form Valid:' + userForm.valid);
+    // console.log('Form Submitted:' + userForm.submitted);
+
+    console.log('hello');
   }
 
 }

@@ -1,3 +1,74 @@
-<p>
-  volunteer works!
-</p>
+<div class="small-push-top">
+  <h2>Join as volunteer!</h2>
+
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate class="form-group">
+
+
+      <!-- <input id="name" name="name" class="form-control" 
+        required minlength="4" appForbiddenName="bob"
+        [(ngModel)]="hero.name" #name="ngModel" > -->
+
+        <label for="firstname">First name</label>
+        <input name="firstname" ngModel required #first="ngModel" id="firstname" class="form-control">
+      <!-- {{#first}} -->
+      <!-- {{#f.controls}} -->
+
+      <!-- [formGroup]="form" and formControlName="firstname" -->
+
+      <div *ngIf="false" >
+        lol
+      </div>
+
+
+        <label for="lastname">Last name</label>
+        <input name="lastname" ngModel required id="lastname" class="form-control">
+
+  <br>
+    <p>Gender:</p>
+       <div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-secondary active">
+      <input type="radio" name="options" id="option1" autocomplete="off" checked> Male
+    </label>
+    <label class="btn btn-secondary">
+      <input type="radio" name="options" id="option2" autocomplete="off"> Female
+    </label>
+  </div>
+
+  <!-- <div class="radio">
+    <label><input type="radio" name="optradio" checked>Option 1</label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" name="optradio">Option 2</label>
+  </div>
+  <div class="radio disabled">
+    <label><input type="radio" name="optradio" disabled>Option 3</label>
+  </div> -->
+  <br>
+  <br>
+
+
+  <p>Skills:</p>
+  <div class="btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-secondary">
+      <input type="checkbox" autocomplete="off"> Cooking
+    </label>
+    <label class="btn btn-secondary">
+      <input type="checkbox" autocomplete="off"> Coding
+    </label>
+    <label class="btn btn-secondary">
+      <input type="checkbox" autocomplete="off"> Dancing
+    </label>
+  </div>
+
+  <br>
+
+
+  <div class="form-group">
+      <label for="exampleFormControlTextarea1">Extra information:</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+  <br>
+        <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Join now!</button>
+  </form>
+</div>

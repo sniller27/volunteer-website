@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+.activated {
+	color: green !important;
+}
+
+.stpatrickvideo {
+	width: 100%;
+	max-width: 800px;
+	height: 500px;
+	display: block;
+	margin-bottom: 50px;
+	margin: auto;
+}
+
+.push-top {
+	margin-top: 50px;
+}
+
+.push-bot {
+	margin-bottom: 50px;
+}

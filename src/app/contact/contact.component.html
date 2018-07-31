@@ -1,0 +1,11 @@
+<h2>Send us a message!</h2>
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate class="form-group">
+
+      <label for="firstname">First name</label>
+      <input name="firstname" ngModel required #first="ngModel" id="firstname" class="form-control">
+      <label for="lastname">Last name</label>
+      <input name="lastname" ngModel required id="lastname" class="form-control">
+<br>
+      <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Submit</button>
+</form>

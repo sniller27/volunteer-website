@@ -1,0 +1,87 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">St. Patricks event</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item">
+        <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+        <a class="nav-link" routerLink="/home" routerLinkActive="activated">
+        Home
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <!-- <a class="nav-link" href="#">Programme</a> -->
+        <a class="nav-link" routerLink="/programme" routerLinkActive="activated">
+          Programme
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <!-- <a class="nav-link" href="#">About</a> -->
+        <a class="nav-link" routerLink="/about" routerLinkActive="activated">
+          About
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <!-- <a class="nav-link" href="#">Volunteer</a> -->
+        <a class="nav-link" routerLink="/volunteer" routerLinkActive="activated">
+          Volunteer
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <!-- <a class="nav-link" href="#">Contact</a> -->
+        <a class="nav-link" routerLink="/contact" routerLinkActive="activated">
+          Contact
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+
+<!-- other way of doing it  -->
+    <!-- <a routerLink="posts" [class.activated]="currentUrl == '/posts'"> -->
+<!-- 
+<nav>
+  <ul>
+
+    <li>
+      <a routerLink="/home" routerLinkActive="activate">
+        hellossdsd
+      </a>
+    </li>
+    
+    <li>
+    
+      <a routerLink="/programme" routerLinkActive="activate">
+        <i class="material-icons">message</i>
+      </a>
+    </li>
+
+    <li>
+      <a routerLink="/about" routerLinkActive="activate">
+        <i class="material-icons">supervised_user_circle</i>
+      </a>
+    </li>
+
+    <li>
+      <a routerLink="/volunteer" routerLinkActive="activate">
+        <i class="material-icons">supervised_user_circle</i>
+      </a>
+    </li>
+
+    <li>
+      <a routerLink="/contact" routerLinkActive="activate">
+        <i class="material-icons">supervised_user_circle</i>
+      </a>
+    </li>
+  </ul>
+</nav> -->

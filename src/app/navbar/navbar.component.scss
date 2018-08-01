@@ -1,0 +1,13 @@
+@import '../styles.scss';
+
+.navbar {
+	background-color: $dark-green;
+
+	a{
+		color: $gray;
+	}
+
+	[_ngcontent-c1] .activated[_ngcontent-c1] {
+		color: $gold;
+	}
+}

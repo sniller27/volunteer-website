@@ -23,6 +23,10 @@ export class VolunteerComponent implements OnInit {
     // console.log('Name:' + userForm.controls['lastname'].value);
     // console.log('Form Valid:' + userForm.valid);
     // console.log('Form Submitted:' + userForm.submitted);
+    console.log(this.data.sendPost());
+
+    //1. addHero({ name } as Hero)
+    //2. subscribe
 
     console.log('hello');
   }

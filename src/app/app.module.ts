@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 
 //services
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProgrammeComponent,
     AboutComponent,
     VolunteerComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,13 @@
 @import '../../styles.scss';
 
 .navbar {
+	
+	.navbar-brand {
+		@media screen and (max-width: 385px) {
+			font-size: 0.90rem;
+		}
+	}
+
 	background-color: $dark-green;
 
 	a{
@@ -11,3 +18,4 @@
 		color: $gold;
 	}
 }
+

@@ -9,19 +9,29 @@
         [(ngModel)]="hero.name" #name="ngModel" > -->
 
         <label for="firstname">First name</label>
-        <input name="firstname" ngModel required #first="ngModel" id="firstname" class="form-control">
+        <input name="firstname" [(ngModel)]="volunteerSubmit.firstname" required #first="ngModel" id="firstname" class="form-control">
+        <!-- {{volunteerSubmit.firstname}} -->
+        <div [hidden]="volunteerSubmit.firstname || f.controls['firstname'].pristine != false"
+             class="alert alert-danger">
+          Firstname is required
+        </div>
+
       <!-- {{#first}} -->
       <!-- {{#f.controls}} -->
 
       <!-- [formGroup]="form" and formControlName="firstname" -->
-
+<!-- 
       <div *ngIf="false" >
         lol
-      </div>
+      </div> -->
 
 
         <label for="lastname">Last name</label>
-        <input name="lastname" ngModel required id="lastname" class="form-control">
+        <input name="lastname" [(ngModel)]="volunteerSubmit.lastname" required id="lastname" class="form-control">
+        <div [hidden]="volunteerSubmit.lastname || f.controls['lastname'].pristine != false"
+             class="alert alert-danger">
+          Lastname is required
+        </div>
 
   <br>
     <p>Gender:</p>

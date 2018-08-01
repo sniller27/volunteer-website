@@ -12,6 +12,8 @@ import { DataService } from '../data.service';
 })
 export class VolunteerComponent implements OnInit {
 
+  volunteerSubmit: Object = {};
+
   constructor(private data: DataService) { }
 
   ngOnInit() {

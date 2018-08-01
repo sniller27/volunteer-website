@@ -6,7 +6,6 @@ import { HomeComponent } from './home/home.component';
 import { ProgrammeComponent } from './programme/programme.component';
 import { AboutComponent } from './about/about.component';
 import { VolunteerComponent } from './volunteer/volunteer.component';
-import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {
@@ -24,10 +23,6 @@ const routes: Routes = [
   {
     path: 'volunteer',
     component: VolunteerComponent
-  },
-  {
-    path: 'contact',
-    component: ContactComponent
   }
 ];
 

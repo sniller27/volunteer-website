@@ -10,7 +10,6 @@ import { HomeComponent } from './home/home.component';
 import { ProgrammeComponent } from './programme/programme.component';
 import { AboutComponent } from './about/about.component';
 import { VolunteerComponent } from './volunteer/volunteer.component';
-import { ContactComponent } from './contact/contact.component';
 
 //services
 import { HttpClientModule } from '@angular/common/http';
@@ -24,7 +23,6 @@ import { FooterComponent } from './footer/footer.component';
     ProgrammeComponent,
     AboutComponent,
     VolunteerComponent,
-    ContactComponent,
     FooterComponent
   ],
   imports: [

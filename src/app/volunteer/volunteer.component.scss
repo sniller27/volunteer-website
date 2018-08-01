@@ -1,0 +1,17 @@
+@import '../../styles.scss';
+
+.skills label {
+	margin-right: 5px;
+}
+
+.btn-group-toggle label {
+	background-color: $light-green;
+}
+
+.btn-group-toggle label:hover {
+	background-color: $medium-green;
+}
+
+.btn-group-toggle .active {
+	background-color: $dark-green;
+}
